@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" type="image/jpg" href="/img/logo.png">
+    <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+<body class="bg-cover bg-fixed center no-repeat" style="background-image: url('img/background.jpg')">
+    <h1 class="text-3xl font-bold text-center mt-10 mb-10 text-white">GYMNAST ENTHUSIASTS</h1>
+    
+    <nav class="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-3 px-6 bg-neutral-800 shadow sm:items-baseline w-full">
+        <div class="mb-2 sm:mb-0 container flex flex-wrap items-center mx-auto">
+            <ul class="container flex flex-wrap justify-center items-center mx-auto"> 
+                <li class="hover:bg-black mr-10"><a href="index.html" class="text-lg no-underline text-white">About</a></li>
+                <li class="hover:bg-black mr-10"><a href="history.html" class="text-lg no-underline text-white">History</a></li>
+                <li class="hover:bg-black mr-10"><a href="video.html" class="text-lg no-underline text-white">Videos</a></li>
+                <li class="hover:bg-black mr-10"><a href="pictures.html" class="text-lg no-underline text-white">Famous Athletes</a></li>
+            </ul>    
+        </div>
+    </nav>
+    <h1 class="text-white justify-center mt-5 text-center">Sign up for our weekly newsletter to keep up with our recent updates </h1>
+<form class="justify-center container mx-auto">
+    <div class="mb-6">
+        <label class="block mb-2 text-sm font-medium text-white">Your email</label>
+        <input type="email" class="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="@gmail.com" required>
+    </div>
+    <div class="mb-6">
+        <label class="block mb-2 text-sm font-medium text-white">Enter username</label>
+        <input type="text" class="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+    </div>
+    <button onclick="myFunction()" type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Sign up</button>
+</form>
+</body>
+<script>
+    function myFunction()
+        {
+            alert("You've succesfully signed up");
+        }
+</script>
+</html>
